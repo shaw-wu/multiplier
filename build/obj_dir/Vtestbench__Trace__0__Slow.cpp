@@ -12,7 +12,7 @@ VL_ATTR_COLD void Vtestbench___024root__trace_init_sub__TOP__0(Vtestbench___024r
     const int c = vlSymsp->__Vm_baseCode;
     // Body
     tracep->pushPrefix("testbench", VerilatedTracePrefixType::SCOPE_MODULE);
-    tracep->declBit(c+35,0,"clk",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+142,0,"clk",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+1,0,"rst",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+2,0,"invalid",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+3,0,"flush",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
@@ -20,56 +20,125 @@ VL_ATTR_COLD void Vtestbench___024root__trace_init_sub__TOP__0(Vtestbench___024r
     tracep->declBus(c+5,0,"multiplicand",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
     tracep->declBus(c+6,0,"multiplier",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
     tracep->pushPrefix("t0", VerilatedTracePrefixType::SCOPE_MODULE);
-    tracep->declBus(c+45,0,"XLEN",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBit(c+35,0,"clk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBus(c+144,0,"XLEN",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBit(c+142,0,"clk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+1,0,"rst",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBit(c+8,0,"inready",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+125,0,"inready",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+2,0,"invalid",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+3,0,"flush",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBus(c+4,0,"mul_signed",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
     tracep->declBus(c+5,0,"multiplicand",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
     tracep->declBus(c+6,0,"multiplier",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBit(c+9,0,"outvalid",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBus(c+10,0,"result_hi",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBus(c+11,0,"result_lo",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBit(c+9,0,"ovalid",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declQuad(c+36,0,"mula",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
-    tracep->declQuad(c+38,0,"mulb",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
-    tracep->declBit(c+40,0,"signed_a",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBit(c+7,0,"signed_b",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBus(c+46,0,"IDLE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
-    tracep->declBus(c+47,0,"WAIT",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
-    tracep->declBus(c+48,0,"FLUSH",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
-    tracep->declBus(c+12,0,"current_state",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
-    tracep->declBus(c+41,0,"next_state",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
-    tracep->declBit(c+13,0,"en",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBit(c+14,0,"arst",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBit(c+8,0,"mul_ready",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+126,0,"outvalid",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBus(c+127,0,"result_hi",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBus(c+128,0,"result_lo",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBit(c+126,0,"ovalid",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declQuad(c+11,0,"mula",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
+    tracep->declQuad(c+7,0,"mulb",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
+    tracep->declBit(c+9,0,"signed_a",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+10,0,"signed_b",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBus(c+145,0,"IDLE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
+    tracep->declBus(c+146,0,"WAIT",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
+    tracep->declBus(c+147,0,"FLUSH",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
+    tracep->declBus(c+129,0,"current_state",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
+    tracep->declBus(c+143,0,"next_state",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 1,0);
+    tracep->declBit(c+130,0,"en",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+131,0,"arst",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+125,0,"mul_ready",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->pushPrefix("m0", VerilatedTracePrefixType::SCOPE_MODULE);
-    tracep->declBus(c+49,0,"DATA_BITS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBit(c+35,0,"clk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBus(c+148,0,"DATA_BITS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBit(c+142,0,"clk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+1,0,"asyn_rst",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBit(c+13,0,"en",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBit(c+14,0,"syn_rst",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declQuad(c+36,0,"multiplicand",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
-    tracep->declQuad(c+38,0,"multiplier",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
-    tracep->declBit(c+9,0,"outvalid",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declQuad(c+15,0,"result_hi",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
-    tracep->declQuad(c+17,0,"result_lo",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
-    tracep->declBus(c+50,0,"DDATA_BITS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBus(c+51,0,"LOGDATA_BITS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBus(c+51,0,"COUNT_BITS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declBus(c+49,0,"MAX_COUNT",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
-    tracep->declArray(c+19,0,"mula",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
-    tracep->declQuad(c+22,0,"mulb",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
-    tracep->declArray(c+24,0,"mulresult",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
-    tracep->declBus(c+27,0,"counter",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 5,0);
-    tracep->declBit(c+28,0,"sign_b",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declArray(c+42,0,"init_mula",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
-    tracep->declQuad(c+38,0,"init_mulb",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
-    tracep->declArray(c+29,0,"add_mula",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
-    tracep->declArray(c+32,0,"neg_mula",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
-    tracep->declBus(c+52,0,"clog2__Vstatic__i",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::INTEGER, false,-1, 31,0);
+    tracep->declBit(c+130,0,"en",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+131,0,"syn_rst",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declQuad(c+11,0,"multiplicand",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
+    tracep->declQuad(c+7,0,"multiplier",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
+    tracep->declBit(c+126,0,"outvalid",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declQuad(c+132,0,"result_hi",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
+    tracep->declQuad(c+134,0,"result_lo",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 32,0);
+    tracep->declBus(c+149,0,"DDATA_BITS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBus(c+150,0,"LOGDATA_BITS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBus(c+150,0,"COUNT_BITS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBus(c+148,0,"MAX_COUNT",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declArray(c+13,0,"S",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+16,0,"nS",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+136,0,"P",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declQuad(c+139,0,"B",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 33,0);
+    tracep->declBus(c+141,0,"counter",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 5,0);
+    tracep->declArray(c+19,0,"adds",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+22,0,"sum",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declBus(c+151,0,"clog2__Vstatic__i",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::INTEGER, false,-1, 31,0);
+    tracep->pushPrefix("alu", VerilatedTracePrefixType::SCOPE_MODULE);
+    tracep->declArray(c+136,0,"a",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+19,0,"b",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declBit(c+152,0,"cin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declArray(c+22,0,"sum",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declBit(c+25,0,"cout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declArray(c+26,0,"g",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+29,0,"p",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+32,0,"c",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 66,0);
+    tracep->declBus(c+153,0,"STAGE_NUM",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->pushPrefix("G", VerilatedTracePrefixType::ARRAY_UNPACKED);
+    for (int i = 0; i < 8; ++i) {
+        tracep->declArray(c+35+i*3,0,"",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, true,(i+0), 65,0);
+    }
+    tracep->popPrefix();
+    tracep->pushPrefix("P", VerilatedTracePrefixType::ARRAY_UNPACKED);
+    for (int i = 0; i < 8; ++i) {
+        tracep->declArray(c+59+i*3,0,"",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, true,(i+0), 65,0);
+    }
+    tracep->popPrefix();
+    tracep->declBus(c+154,0,"clog2__Vstatic__k",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::INTEGER, false,-1, 31,0);
+    tracep->pushPrefix("p1", VerilatedTracePrefixType::SCOPE_MODULE);
+    tracep->declBus(c+155,0,"STAGE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declArray(c+26,0,"Gin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+29,0,"Pin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+83,0,"Gout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+86,0,"Pout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->popPrefix();
+    tracep->pushPrefix("p2", VerilatedTracePrefixType::SCOPE_MODULE);
+    tracep->declBus(c+156,0,"STAGE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declArray(c+83,0,"Gin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+86,0,"Pin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+89,0,"Gout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+92,0,"Pout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->popPrefix();
+    tracep->pushPrefix("p3", VerilatedTracePrefixType::SCOPE_MODULE);
+    tracep->declBus(c+157,0,"STAGE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declArray(c+89,0,"Gin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+92,0,"Pin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+95,0,"Gout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+98,0,"Pout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->popPrefix();
+    tracep->pushPrefix("p4", VerilatedTracePrefixType::SCOPE_MODULE);
+    tracep->declBus(c+158,0,"STAGE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declArray(c+95,0,"Gin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+98,0,"Pin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+101,0,"Gout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+104,0,"Pout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->popPrefix();
+    tracep->pushPrefix("p5", VerilatedTracePrefixType::SCOPE_MODULE);
+    tracep->declBus(c+159,0,"STAGE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declArray(c+101,0,"Gin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+104,0,"Pin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+107,0,"Gout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+110,0,"Pout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->popPrefix();
+    tracep->pushPrefix("p6", VerilatedTracePrefixType::SCOPE_MODULE);
+    tracep->declBus(c+150,0,"STAGE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declArray(c+107,0,"Gin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+110,0,"Pin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+113,0,"Gout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+116,0,"Pout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->popPrefix();
+    tracep->pushPrefix("p7", VerilatedTracePrefixType::SCOPE_MODULE);
+    tracep->declBus(c+153,0,"STAGE",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declArray(c+113,0,"Gin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+116,0,"Pin",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+119,0,"Gout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->declArray(c+122,0,"Pout",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 65,0);
+    tracep->popPrefix();
+    tracep->popPrefix();
     tracep->popPrefix();
     tracep->popPrefix();
     tracep->popPrefix();
@@ -117,14 +186,22 @@ VL_ATTR_COLD void Vtestbench___024root__trace_const_0_sub_0(Vtestbench___024root
     // Init
     uint32_t* const oldp VL_ATTR_UNUSED = bufp->oldp(vlSymsp->__Vm_baseCode);
     // Body
-    bufp->fullIData(oldp+45,(0x20U),32);
-    bufp->fullCData(oldp+46,(0U),2);
-    bufp->fullCData(oldp+47,(1U),2);
-    bufp->fullCData(oldp+48,(2U),2);
-    bufp->fullIData(oldp+49,(0x21U),32);
-    bufp->fullIData(oldp+50,(0x42U),32);
-    bufp->fullIData(oldp+51,(6U),32);
-    bufp->fullIData(oldp+52,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__clog2__Vstatic__i),32);
+    bufp->fullIData(oldp+144,(0x20U),32);
+    bufp->fullCData(oldp+145,(0U),2);
+    bufp->fullCData(oldp+146,(1U),2);
+    bufp->fullCData(oldp+147,(2U),2);
+    bufp->fullIData(oldp+148,(0x21U),32);
+    bufp->fullIData(oldp+149,(0x42U),32);
+    bufp->fullIData(oldp+150,(6U),32);
+    bufp->fullIData(oldp+151,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__clog2__Vstatic__i),32);
+    bufp->fullBit(oldp+152,(0U));
+    bufp->fullIData(oldp+153,(7U),32);
+    bufp->fullIData(oldp+154,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__clog2__Vstatic__k),32);
+    bufp->fullIData(oldp+155,(1U),32);
+    bufp->fullIData(oldp+156,(2U),32);
+    bufp->fullIData(oldp+157,(3U),32);
+    bufp->fullIData(oldp+158,(4U),32);
+    bufp->fullIData(oldp+159,(5U),32);
 }
 
 VL_ATTR_COLD void Vtestbench___024root__trace_full_0_sub_0(Vtestbench___024root* vlSelf, VerilatedVcd::Buffer* bufp);
@@ -144,15 +221,21 @@ VL_ATTR_COLD void Vtestbench___024root__trace_full_0_sub_0(Vtestbench___024root*
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
     uint32_t* const oldp VL_ATTR_UNUSED = bufp->oldp(vlSymsp->__Vm_baseCode);
-    VlWide<3>/*95:0*/ __Vtemp_2;
+    VlWide<3>/*95:0*/ __Vtemp_1;
     VlWide<3>/*95:0*/ __Vtemp_3;
-    VlWide<3>/*95:0*/ __Vtemp_4;
+    VlWide<3>/*95:0*/ __Vtemp_5;
+    VlWide<3>/*95:0*/ __Vtemp_6;
+    VlWide<3>/*95:0*/ __Vtemp_7;
+    VlWide<3>/*95:0*/ __Vtemp_8;
+    VlWide<3>/*95:0*/ __Vtemp_9;
     VlWide<3>/*95:0*/ __Vtemp_10;
+    VlWide<3>/*95:0*/ __Vtemp_11;
     VlWide<3>/*95:0*/ __Vtemp_12;
     VlWide<3>/*95:0*/ __Vtemp_13;
-    VlWide<3>/*95:0*/ __Vtemp_14;
     VlWide<3>/*95:0*/ __Vtemp_15;
-    VlWide<3>/*95:0*/ __Vtemp_16;
+    VlWide<3>/*95:0*/ __Vtemp_17;
+    VlWide<3>/*95:0*/ __Vtemp_19;
+    VlWide<3>/*95:0*/ __Vtemp_21;
     // Body
     bufp->fullBit(oldp+1,(vlSelfRef.testbench__DOT__rst));
     bufp->fullBit(oldp+2,(vlSelfRef.testbench__DOT__invalid));
@@ -160,96 +243,805 @@ VL_ATTR_COLD void Vtestbench___024root__trace_full_0_sub_0(Vtestbench___024root*
     bufp->fullCData(oldp+4,(vlSelfRef.testbench__DOT__mul_signed),2);
     bufp->fullIData(oldp+5,(vlSelfRef.testbench__DOT__multiplicand),32);
     bufp->fullIData(oldp+6,(vlSelfRef.testbench__DOT__multiplier),32);
-    bufp->fullBit(oldp+7,(((IData)(vlSelfRef.testbench__DOT__mul_signed) 
-                           & (vlSelfRef.testbench__DOT__multiplier 
-                              >> 0x1fU))));
-    bufp->fullBit(oldp+8,((0U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))));
-    bufp->fullBit(oldp+9,(vlSelfRef.testbench__DOT__t0__DOT__ovalid));
-    bufp->fullIData(oldp+10,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulresult[1U]),32);
-    bufp->fullIData(oldp+11,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulresult[0U]),32);
-    bufp->fullCData(oldp+12,(vlSelfRef.testbench__DOT__t0__DOT__current_state),2);
-    bufp->fullBit(oldp+13,(((~ (IData)(vlSelfRef.testbench__DOT__t0__DOT__ovalid)) 
-                            & (1U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state)))));
-    bufp->fullBit(oldp+14,((2U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))));
-    bufp->fullQData(oldp+15,((0x1ffffffffULL & (((QData)((IData)(
-                                                                 vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulresult[2U])) 
-                                                 << 0x1fU) 
-                                                | ((QData)((IData)(
-                                                                   vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulresult[1U])) 
-                                                   >> 1U)))),33);
-    bufp->fullQData(oldp+17,((0x1ffffffffULL & (((QData)((IData)(
-                                                                 vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulresult[1U])) 
-                                                 << 0x20U) 
-                                                | (QData)((IData)(
-                                                                  vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulresult[0U]))))),33);
-    bufp->fullWData(oldp+19,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula),66);
-    bufp->fullQData(oldp+22,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulb),33);
-    bufp->fullWData(oldp+24,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulresult),66);
-    bufp->fullCData(oldp+27,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__counter),6);
-    bufp->fullBit(oldp+28,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__sign_b));
-    __Vtemp_2[0U] = 1U;
-    __Vtemp_2[1U] = 0U;
-    __Vtemp_2[2U] = 0U;
-    __Vtemp_3[0U] = (~ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[0U]);
-    __Vtemp_3[1U] = (~ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[1U]);
-    __Vtemp_3[2U] = (~ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[2U]);
-    VL_ADD_W(3, __Vtemp_4, __Vtemp_2, __Vtemp_3);
-    if ((1U & (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mulb))) {
-        if (((0x21U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__counter)) 
-             & (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__sign_b))) {
-            __Vtemp_10[0U] = __Vtemp_4[0U];
-            __Vtemp_10[1U] = __Vtemp_4[1U];
-            __Vtemp_10[2U] = (3U & __Vtemp_4[2U]);
-        } else {
-            __Vtemp_10[0U] = vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[0U];
-            __Vtemp_10[1U] = vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[1U];
-            __Vtemp_10[2U] = (3U & vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[2U]);
-        }
-    } else {
-        __Vtemp_10[0U] = 0U;
-        __Vtemp_10[1U] = 0U;
-        __Vtemp_10[2U] = 0U;
-    }
-    bufp->fullWData(oldp+29,(__Vtemp_10),66);
-    __Vtemp_12[0U] = 1U;
-    __Vtemp_12[1U] = 0U;
-    __Vtemp_12[2U] = 0U;
-    __Vtemp_13[0U] = (~ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[0U]);
-    __Vtemp_13[1U] = (~ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[1U]);
-    __Vtemp_13[2U] = (~ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__mula[2U]);
-    VL_ADD_W(3, __Vtemp_14, __Vtemp_12, __Vtemp_13);
-    __Vtemp_15[0U] = __Vtemp_14[0U];
-    __Vtemp_15[1U] = __Vtemp_14[1U];
-    __Vtemp_15[2U] = (3U & __Vtemp_14[2U]);
-    bufp->fullWData(oldp+32,(__Vtemp_15),66);
-    bufp->fullBit(oldp+35,(vlSelfRef.testbench__DOT__clk));
-    bufp->fullQData(oldp+36,((((QData)((IData)(vlSelfRef.testbench__DOT__t0__DOT__signed_a)) 
-                               << 0x20U) | (QData)((IData)(vlSelfRef.testbench__DOT__multiplicand)))),33);
-    bufp->fullQData(oldp+38,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__init_mulb),33);
-    bufp->fullBit(oldp+40,(vlSelfRef.testbench__DOT__t0__DOT__signed_a));
-    bufp->fullCData(oldp+41,(((0U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))
-                               ? ((IData)(vlSelfRef.testbench__DOT__invalid)
-                                   ? 1U : 0U) : ((1U 
-                                                  == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))
-                                                  ? 
-                                                 ((IData)(vlSelfRef.testbench__DOT__flush)
-                                                   ? 2U
-                                                   : 
-                                                  ((IData)(vlSelfRef.testbench__DOT__t0__DOT__ovalid)
-                                                    ? 0U
-                                                    : 1U))
-                                                  : 0U))),2);
-    __Vtemp_16[0U] = (IData)((((QData)((IData)(vlSelfRef.testbench__DOT__t0__DOT__signed_a)) 
-                               << 0x20U) | (QData)((IData)(vlSelfRef.testbench__DOT__multiplicand))));
-    __Vtemp_16[1U] = (((IData)((0x1ffffffffULL & (- (QData)((IData)(vlSelfRef.testbench__DOT__t0__DOT__signed_a))))) 
-                       << 1U) | (IData)(((((QData)((IData)(vlSelfRef.testbench__DOT__t0__DOT__signed_a)) 
-                                           << 0x20U) 
-                                          | (QData)((IData)(vlSelfRef.testbench__DOT__multiplicand))) 
-                                         >> 0x20U)));
-    __Vtemp_16[2U] = (((IData)((0x1ffffffffULL & (- (QData)((IData)(vlSelfRef.testbench__DOT__t0__DOT__signed_a))))) 
-                       >> 0x1fU) | ((IData)(((0x1ffffffffULL 
-                                              & (- (QData)((IData)(vlSelfRef.testbench__DOT__t0__DOT__signed_a)))) 
-                                             >> 0x20U)) 
-                                    << 1U));
-    bufp->fullWData(oldp+42,(__Vtemp_16),66);
+    bufp->fullQData(oldp+7,((((QData)((IData)(((IData)(vlSelfRef.testbench__DOT__mul_signed) 
+                                               & (vlSelfRef.testbench__DOT__multiplier 
+                                                  >> 0x1fU)))) 
+                              << 0x20U) | (QData)((IData)(vlSelfRef.testbench__DOT__multiplier)))),33);
+    bufp->fullBit(oldp+9,((IData)((((IData)(vlSelfRef.testbench__DOT__mul_signed) 
+                                    >> 1U) & (vlSelfRef.testbench__DOT__multiplicand 
+                                              >> 0x1fU)))));
+    bufp->fullBit(oldp+10,(((IData)(vlSelfRef.testbench__DOT__mul_signed) 
+                            & (vlSelfRef.testbench__DOT__multiplier 
+                               >> 0x1fU))));
+    bufp->fullQData(oldp+11,(vlSelfRef.testbench__DOT__t0__DOT__mula),33);
+    __Vtemp_1[0U] = 0U;
+    __Vtemp_1[1U] = ((IData)(vlSelfRef.testbench__DOT__t0__DOT__mula) 
+                     << 1U);
+    __Vtemp_1[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__mula) 
+                      >> 0x1fU) | ((IData)((vlSelfRef.testbench__DOT__t0__DOT__mula 
+                                            >> 0x20U)) 
+                                   << 1U));
+    bufp->fullWData(oldp+13,(__Vtemp_1),66);
+    __Vtemp_3[0U] = 1U;
+    __Vtemp_3[1U] = 0U;
+    __Vtemp_3[2U] = 0U;
+    __Vtemp_5[0U] = 0xffffffffU;
+    __Vtemp_5[1U] = (~ ((IData)(vlSelfRef.testbench__DOT__t0__DOT__mula) 
+                        << 1U));
+    __Vtemp_5[2U] = (~ (((IData)(vlSelfRef.testbench__DOT__t0__DOT__mula) 
+                         >> 0x1fU) | ((IData)((vlSelfRef.testbench__DOT__t0__DOT__mula 
+                                               >> 0x20U)) 
+                                      << 1U)));
+    VL_ADD_W(3, __Vtemp_6, __Vtemp_3, __Vtemp_5);
+    __Vtemp_7[0U] = __Vtemp_6[0U];
+    __Vtemp_7[1U] = __Vtemp_6[1U];
+    __Vtemp_7[2U] = (3U & __Vtemp_6[2U]);
+    bufp->fullWData(oldp+16,(__Vtemp_7),66);
+    bufp->fullWData(oldp+19,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__adds),66);
+    __Vtemp_8[0U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[0U] 
+                     ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[0U]);
+    __Vtemp_8[1U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[1U] 
+                     ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[1U]);
+    __Vtemp_8[2U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[2U] 
+                     ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[2U]);
+    bufp->fullWData(oldp+22,(__Vtemp_8),66);
+    bufp->fullBit(oldp+25,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout));
+    bufp->fullWData(oldp+26,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__g),66);
+    bufp->fullWData(oldp+29,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p),66);
+    __Vtemp_9[0U] = vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[0U];
+    __Vtemp_9[1U] = vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[1U];
+    __Vtemp_9[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout) 
+                      << 2U) | vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[2U]);
+    bufp->fullWData(oldp+32,(__Vtemp_9),67);
+    bufp->fullWData(oldp+35,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[0]),66);
+    bufp->fullWData(oldp+38,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[1]),66);
+    bufp->fullWData(oldp+41,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[2]),66);
+    bufp->fullWData(oldp+44,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[3]),66);
+    bufp->fullWData(oldp+47,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[4]),66);
+    bufp->fullWData(oldp+50,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[5]),66);
+    bufp->fullWData(oldp+53,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[6]),66);
+    bufp->fullWData(oldp+56,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[7]),66);
+    bufp->fullWData(oldp+59,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[0]),66);
+    bufp->fullWData(oldp+62,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[1]),66);
+    bufp->fullWData(oldp+65,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[2]),66);
+    bufp->fullWData(oldp+68,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[3]),66);
+    bufp->fullWData(oldp+71,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[4]),66);
+    bufp->fullWData(oldp+74,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[5]),66);
+    bufp->fullWData(oldp+77,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[6]),66);
+    bufp->fullWData(oldp+80,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[7]),66);
+    bufp->fullWData(oldp+83,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p1____pinNumber3),66);
+    bufp->fullWData(oldp+86,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p1____pinNumber4),66);
+    bufp->fullWData(oldp+89,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p2____pinNumber3),66);
+    bufp->fullWData(oldp+92,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p2____pinNumber4),66);
+    bufp->fullWData(oldp+95,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p3____pinNumber3),66);
+    bufp->fullWData(oldp+98,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p3____pinNumber4),66);
+    __Vtemp_10[0U] = (IData)((((QData)((IData)(((((
+                                                   (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_30) 
+                                                     << 0x1fU) 
+                                                    | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_31) 
+                                                       << 0x1eU)) 
+                                                   | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_32) 
+                                                       << 0x1dU) 
+                                                      | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_33) 
+                                                         << 0x1cU))) 
+                                                  | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_34) 
+                                                       << 0x1bU) 
+                                                      | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_35) 
+                                                         << 0x1aU)) 
+                                                     | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_36) 
+                                                         << 0x19U) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_37) 
+                                                           << 0x18U)))) 
+                                                 | (((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_38) 
+                                                       << 0x17U) 
+                                                      | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_39) 
+                                                         << 0x16U)) 
+                                                     | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_40) 
+                                                         << 0x15U) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_41) 
+                                                           << 0x14U))) 
+                                                    | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_42) 
+                                                         << 0x13U) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_43) 
+                                                           << 0x12U)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_66) 
+                                                           << 0x11U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_64) 
+                                                             << 0x10U))))) 
+                                                | ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_62) 
+                                                       << 0xfU) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_60) 
+                                                         << 0xeU)) 
+                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_58) 
+                                                         << 0xdU) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_56) 
+                                                           << 0xcU))) 
+                                                    | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_54) 
+                                                         << 0xbU) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_52) 
+                                                           << 0xaU)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_50) 
+                                                           << 9U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_48) 
+                                                             << 8U)))) 
+                                                   | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_46) 
+                                                         << 7U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_44) 
+                                                           << 6U)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_42) 
+                                                           << 5U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_40) 
+                                                             << 4U))) 
+                                                      | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_38) 
+                                                           << 3U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_36) 
+                                                             << 2U)) 
+                                                         | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_34) 
+                                                             << 1U) 
+                                                            | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_32)))))))) 
+                               << 0x20U) | (QData)((IData)(
+                                                           ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_30) 
+                                                                << 0x1fU) 
+                                                               | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_28) 
+                                                                  << 0x1eU)) 
+                                                              | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_26) 
+                                                                  << 0x1dU) 
+                                                                 | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_24) 
+                                                                    << 0x1cU))) 
+                                                             | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_22) 
+                                                                  << 0x1bU) 
+                                                                 | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_20) 
+                                                                    << 0x1aU)) 
+                                                                | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_18) 
+                                                                    << 0x19U) 
+                                                                   | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_16) 
+                                                                      << 0x18U)))) 
+                                                            | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_14) 
+                                                                  << 0x17U) 
+                                                                 | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_12) 
+                                                                    << 0x16U)) 
+                                                                | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_10) 
+                                                                    << 0x15U) 
+                                                                   | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_8) 
+                                                                      << 0x14U))) 
+                                                               | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_6) 
+                                                                    << 0x13U) 
+                                                                   | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_4) 
+                                                                      << 0x12U)) 
+                                                                  | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_2) 
+                                                                      << 0x11U) 
+                                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_0) 
+                                                                         << 0x10U) 
+                                                                        | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_162))))))))));
+    __Vtemp_10[1U] = (IData)(((((QData)((IData)((((
+                                                   ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_30) 
+                                                      << 0x1fU) 
+                                                     | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_31) 
+                                                        << 0x1eU)) 
+                                                    | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_32) 
+                                                        << 0x1dU) 
+                                                       | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_33) 
+                                                          << 0x1cU))) 
+                                                   | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_34) 
+                                                        << 0x1bU) 
+                                                       | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_35) 
+                                                          << 0x1aU)) 
+                                                      | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_36) 
+                                                          << 0x19U) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_37) 
+                                                            << 0x18U)))) 
+                                                  | (((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_38) 
+                                                        << 0x17U) 
+                                                       | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_39) 
+                                                          << 0x16U)) 
+                                                      | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_40) 
+                                                          << 0x15U) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_41) 
+                                                            << 0x14U))) 
+                                                     | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_42) 
+                                                          << 0x13U) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_43) 
+                                                            << 0x12U)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_66) 
+                                                            << 0x11U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_64) 
+                                                              << 0x10U))))) 
+                                                 | ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_62) 
+                                                        << 0xfU) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_60) 
+                                                          << 0xeU)) 
+                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_58) 
+                                                          << 0xdU) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_56) 
+                                                            << 0xcU))) 
+                                                     | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_54) 
+                                                          << 0xbU) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_52) 
+                                                            << 0xaU)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_50) 
+                                                            << 9U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_48) 
+                                                              << 8U)))) 
+                                                    | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_46) 
+                                                          << 7U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_44) 
+                                                            << 6U)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_42) 
+                                                            << 5U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_40) 
+                                                              << 4U))) 
+                                                       | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_38) 
+                                                            << 3U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_36) 
+                                                              << 2U)) 
+                                                          | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_34) 
+                                                              << 1U) 
+                                                             | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_32)))))))) 
+                                << 0x20U) | (QData)((IData)(
+                                                            ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_30) 
+                                                                 << 0x1fU) 
+                                                                | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_28) 
+                                                                   << 0x1eU)) 
+                                                               | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_26) 
+                                                                   << 0x1dU) 
+                                                                  | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_24) 
+                                                                     << 0x1cU))) 
+                                                              | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_22) 
+                                                                   << 0x1bU) 
+                                                                  | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_20) 
+                                                                     << 0x1aU)) 
+                                                                 | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_18) 
+                                                                     << 0x19U) 
+                                                                    | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_16) 
+                                                                       << 0x18U)))) 
+                                                             | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_14) 
+                                                                   << 0x17U) 
+                                                                  | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_12) 
+                                                                     << 0x16U)) 
+                                                                 | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_10) 
+                                                                     << 0x15U) 
+                                                                    | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_8) 
+                                                                       << 0x14U))) 
+                                                                | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_6) 
+                                                                     << 0x13U) 
+                                                                    | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_4) 
+                                                                       << 0x12U)) 
+                                                                   | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_2) 
+                                                                       << 0x11U) 
+                                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_0) 
+                                                                          << 0x10U) 
+                                                                         | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_162))))))))) 
+                              >> 0x20U));
+    __Vtemp_10[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_28) 
+                       << 1U) | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_29));
+    bufp->fullWData(oldp+101,(__Vtemp_10),66);
+    __Vtemp_11[0U] = (IData)((((QData)((IData)(((((
+                                                   (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_81) 
+                                                     << 0x1fU) 
+                                                    | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_80) 
+                                                       << 0x1eU)) 
+                                                   | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_79) 
+                                                       << 0x1dU) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_78) 
+                                                         << 0x1cU))) 
+                                                  | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_77) 
+                                                       << 0x1bU) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_76) 
+                                                         << 0x1aU)) 
+                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_75) 
+                                                         << 0x19U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_74) 
+                                                           << 0x18U)))) 
+                                                 | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_73) 
+                                                       << 0x17U) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_72) 
+                                                         << 0x16U)) 
+                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_71) 
+                                                         << 0x15U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_70) 
+                                                           << 0x14U))) 
+                                                    | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_69) 
+                                                         << 0x13U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_68) 
+                                                           << 0x12U)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_67) 
+                                                           << 0x11U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_65) 
+                                                             << 0x10U))))) 
+                                                | ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_63) 
+                                                       << 0xfU) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_61) 
+                                                         << 0xeU)) 
+                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_59) 
+                                                         << 0xdU) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_57) 
+                                                           << 0xcU))) 
+                                                    | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_55) 
+                                                         << 0xbU) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_53) 
+                                                           << 0xaU)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_51) 
+                                                           << 9U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_49) 
+                                                             << 8U)))) 
+                                                   | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_47) 
+                                                         << 7U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_45) 
+                                                           << 6U)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_43) 
+                                                           << 5U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_41) 
+                                                             << 4U))) 
+                                                      | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_39) 
+                                                           << 3U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_37) 
+                                                             << 2U)) 
+                                                         | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_35) 
+                                                             << 1U) 
+                                                            | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_33)))))))) 
+                               << 0x20U) | (QData)((IData)(
+                                                           ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_31) 
+                                                                << 0x1fU) 
+                                                               | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_29) 
+                                                                  << 0x1eU)) 
+                                                              | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_27) 
+                                                                  << 0x1dU) 
+                                                                 | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_25) 
+                                                                    << 0x1cU))) 
+                                                             | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_23) 
+                                                                  << 0x1bU) 
+                                                                 | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_21) 
+                                                                    << 0x1aU)) 
+                                                                | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_19) 
+                                                                    << 0x19U) 
+                                                                   | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_17) 
+                                                                      << 0x18U)))) 
+                                                            | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_15) 
+                                                                  << 0x17U) 
+                                                                 | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_13) 
+                                                                    << 0x16U)) 
+                                                                | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_11) 
+                                                                    << 0x15U) 
+                                                                   | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_9) 
+                                                                      << 0x14U))) 
+                                                               | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_7) 
+                                                                    << 0x13U) 
+                                                                   | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_5) 
+                                                                      << 0x12U)) 
+                                                                  | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_3) 
+                                                                      << 0x11U) 
+                                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_1) 
+                                                                         << 0x10U) 
+                                                                        | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_168))))))))));
+    __Vtemp_11[1U] = (IData)(((((QData)((IData)((((
+                                                   ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_81) 
+                                                      << 0x1fU) 
+                                                     | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_80) 
+                                                        << 0x1eU)) 
+                                                    | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_79) 
+                                                        << 0x1dU) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_78) 
+                                                          << 0x1cU))) 
+                                                   | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_77) 
+                                                        << 0x1bU) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_76) 
+                                                          << 0x1aU)) 
+                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_75) 
+                                                          << 0x19U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_74) 
+                                                            << 0x18U)))) 
+                                                  | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_73) 
+                                                        << 0x17U) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_72) 
+                                                          << 0x16U)) 
+                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_71) 
+                                                          << 0x15U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_70) 
+                                                            << 0x14U))) 
+                                                     | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_69) 
+                                                          << 0x13U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_68) 
+                                                            << 0x12U)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_67) 
+                                                            << 0x11U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_65) 
+                                                              << 0x10U))))) 
+                                                 | ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_63) 
+                                                        << 0xfU) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_61) 
+                                                          << 0xeU)) 
+                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_59) 
+                                                          << 0xdU) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_57) 
+                                                            << 0xcU))) 
+                                                     | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_55) 
+                                                          << 0xbU) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_53) 
+                                                            << 0xaU)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_51) 
+                                                            << 9U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_49) 
+                                                              << 8U)))) 
+                                                    | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_47) 
+                                                          << 7U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_45) 
+                                                            << 6U)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_43) 
+                                                            << 5U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_41) 
+                                                              << 4U))) 
+                                                       | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_39) 
+                                                            << 3U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_37) 
+                                                              << 2U)) 
+                                                          | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_35) 
+                                                              << 1U) 
+                                                             | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_33)))))))) 
+                                << 0x20U) | (QData)((IData)(
+                                                            ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_31) 
+                                                                 << 0x1fU) 
+                                                                | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_29) 
+                                                                   << 0x1eU)) 
+                                                               | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_27) 
+                                                                   << 0x1dU) 
+                                                                  | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_25) 
+                                                                     << 0x1cU))) 
+                                                              | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_23) 
+                                                                   << 0x1bU) 
+                                                                  | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_21) 
+                                                                     << 0x1aU)) 
+                                                                 | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_19) 
+                                                                     << 0x19U) 
+                                                                    | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_17) 
+                                                                       << 0x18U)))) 
+                                                             | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_15) 
+                                                                   << 0x17U) 
+                                                                  | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_13) 
+                                                                     << 0x16U)) 
+                                                                 | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_11) 
+                                                                     << 0x15U) 
+                                                                    | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_9) 
+                                                                       << 0x14U))) 
+                                                                | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_7) 
+                                                                     << 0x13U) 
+                                                                    | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_5) 
+                                                                       << 0x12U)) 
+                                                                   | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_3) 
+                                                                       << 0x11U) 
+                                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_1) 
+                                                                          << 0x10U) 
+                                                                         | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_168))))))))) 
+                              >> 0x20U));
+    __Vtemp_11[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_83) 
+                       << 1U) | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_82));
+    bufp->fullWData(oldp+104,(__Vtemp_11),66);
+    __Vtemp_12[0U] = (IData)((((QData)((IData)(((((
+                                                   (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_62) 
+                                                     << 0x1fU) 
+                                                    | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_63) 
+                                                       << 0x1eU)) 
+                                                   | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_64) 
+                                                       << 0x1dU) 
+                                                      | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_65) 
+                                                         << 0x1cU))) 
+                                                  | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_66) 
+                                                       << 0x1bU) 
+                                                      | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_67) 
+                                                         << 0x1aU)) 
+                                                     | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_68) 
+                                                         << 0x19U) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_69) 
+                                                           << 0x18U)))) 
+                                                 | (((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_70) 
+                                                       << 0x17U) 
+                                                      | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_71) 
+                                                         << 0x16U)) 
+                                                     | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_72) 
+                                                         << 0x15U) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_73) 
+                                                           << 0x14U))) 
+                                                    | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_74) 
+                                                         << 0x13U) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_75) 
+                                                           << 0x12U)) 
+                                                       | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_76) 
+                                                           << 0x11U) 
+                                                          | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_77) 
+                                                             << 0x10U))))) 
+                                                | ((((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_78) 
+                                                       << 0xfU) 
+                                                      | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_79) 
+                                                         << 0xeU)) 
+                                                     | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_80) 
+                                                         << 0xdU) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_81) 
+                                                           << 0xcU))) 
+                                                    | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_82) 
+                                                         << 0xbU) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_83) 
+                                                           << 0xaU)) 
+                                                       | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_84) 
+                                                           << 9U) 
+                                                          | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_85) 
+                                                             << 8U)))) 
+                                                   | (((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_86) 
+                                                         << 7U) 
+                                                        | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_87) 
+                                                           << 6U)) 
+                                                       | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_88) 
+                                                           << 5U) 
+                                                          | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_89) 
+                                                             << 4U))) 
+                                                      | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_90) 
+                                                           << 3U) 
+                                                          | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_91) 
+                                                             << 2U)) 
+                                                         | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_2) 
+                                                             << 1U) 
+                                                            | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_0)))))))) 
+                               << 0x20U) | (QData)((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_163))));
+    __Vtemp_12[1U] = (IData)(((((QData)((IData)((((
+                                                   ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_62) 
+                                                      << 0x1fU) 
+                                                     | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_63) 
+                                                        << 0x1eU)) 
+                                                    | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_64) 
+                                                        << 0x1dU) 
+                                                       | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_65) 
+                                                          << 0x1cU))) 
+                                                   | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_66) 
+                                                        << 0x1bU) 
+                                                       | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_67) 
+                                                          << 0x1aU)) 
+                                                      | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_68) 
+                                                          << 0x19U) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_69) 
+                                                            << 0x18U)))) 
+                                                  | (((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_70) 
+                                                        << 0x17U) 
+                                                       | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_71) 
+                                                          << 0x16U)) 
+                                                      | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_72) 
+                                                          << 0x15U) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_73) 
+                                                            << 0x14U))) 
+                                                     | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_74) 
+                                                          << 0x13U) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_75) 
+                                                            << 0x12U)) 
+                                                        | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_76) 
+                                                            << 0x11U) 
+                                                           | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_77) 
+                                                              << 0x10U))))) 
+                                                 | ((((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_78) 
+                                                        << 0xfU) 
+                                                       | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_79) 
+                                                          << 0xeU)) 
+                                                      | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_80) 
+                                                          << 0xdU) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_81) 
+                                                            << 0xcU))) 
+                                                     | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_82) 
+                                                          << 0xbU) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_83) 
+                                                            << 0xaU)) 
+                                                        | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_84) 
+                                                            << 9U) 
+                                                           | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_85) 
+                                                              << 8U)))) 
+                                                    | (((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_86) 
+                                                          << 7U) 
+                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_87) 
+                                                            << 6U)) 
+                                                        | (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_88) 
+                                                            << 5U) 
+                                                           | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_89) 
+                                                              << 4U))) 
+                                                       | ((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_90) 
+                                                            << 3U) 
+                                                           | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_91) 
+                                                              << 2U)) 
+                                                          | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_2) 
+                                                              << 1U) 
+                                                             | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_0)))))))) 
+                                << 0x20U) | (QData)((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_163))) 
+                              >> 0x20U));
+    __Vtemp_12[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_60) 
+                       << 1U) | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_61));
+    bufp->fullWData(oldp+107,(__Vtemp_12),66);
+    __Vtemp_13[0U] = (IData)((((QData)((IData)(((((
+                                                   (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_33) 
+                                                     << 0x1fU) 
+                                                    | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_32) 
+                                                       << 0x1eU)) 
+                                                   | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_31) 
+                                                       << 0x1dU) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_30) 
+                                                         << 0x1cU))) 
+                                                  | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_29) 
+                                                       << 0x1bU) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_28) 
+                                                         << 0x1aU)) 
+                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_27) 
+                                                         << 0x19U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_26) 
+                                                           << 0x18U)))) 
+                                                 | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_25) 
+                                                       << 0x17U) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_24) 
+                                                         << 0x16U)) 
+                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_23) 
+                                                         << 0x15U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_22) 
+                                                           << 0x14U))) 
+                                                    | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_21) 
+                                                         << 0x13U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_20) 
+                                                           << 0x12U)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_19) 
+                                                           << 0x11U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_18) 
+                                                             << 0x10U))))) 
+                                                | ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_17) 
+                                                       << 0xfU) 
+                                                      | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_16) 
+                                                         << 0xeU)) 
+                                                     | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_15) 
+                                                         << 0xdU) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_14) 
+                                                           << 0xcU))) 
+                                                    | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_13) 
+                                                         << 0xbU) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_12) 
+                                                           << 0xaU)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_11) 
+                                                           << 9U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_10) 
+                                                             << 8U)))) 
+                                                   | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_9) 
+                                                         << 7U) 
+                                                        | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_8) 
+                                                           << 6U)) 
+                                                       | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_7) 
+                                                           << 5U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_6) 
+                                                             << 4U))) 
+                                                      | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_5) 
+                                                           << 3U) 
+                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_4) 
+                                                             << 2U)) 
+                                                         | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_3) 
+                                                             << 1U) 
+                                                            | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_1)))))))) 
+                               << 0x20U) | (QData)((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_169))));
+    __Vtemp_13[1U] = (IData)(((((QData)((IData)((((
+                                                   ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_33) 
+                                                      << 0x1fU) 
+                                                     | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_32) 
+                                                        << 0x1eU)) 
+                                                    | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_31) 
+                                                        << 0x1dU) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_30) 
+                                                          << 0x1cU))) 
+                                                   | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_29) 
+                                                        << 0x1bU) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_28) 
+                                                          << 0x1aU)) 
+                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_27) 
+                                                          << 0x19U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_26) 
+                                                            << 0x18U)))) 
+                                                  | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_25) 
+                                                        << 0x17U) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_24) 
+                                                          << 0x16U)) 
+                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_23) 
+                                                          << 0x15U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_22) 
+                                                            << 0x14U))) 
+                                                     | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_21) 
+                                                          << 0x13U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_20) 
+                                                            << 0x12U)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_19) 
+                                                            << 0x11U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_18) 
+                                                              << 0x10U))))) 
+                                                 | ((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_17) 
+                                                        << 0xfU) 
+                                                       | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_16) 
+                                                          << 0xeU)) 
+                                                      | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_15) 
+                                                          << 0xdU) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_14) 
+                                                            << 0xcU))) 
+                                                     | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_13) 
+                                                          << 0xbU) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_12) 
+                                                            << 0xaU)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_11) 
+                                                            << 9U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_10) 
+                                                              << 8U)))) 
+                                                    | (((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_9) 
+                                                          << 7U) 
+                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_8) 
+                                                            << 6U)) 
+                                                        | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_7) 
+                                                            << 5U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_6) 
+                                                              << 4U))) 
+                                                       | ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_5) 
+                                                            << 3U) 
+                                                           | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_4) 
+                                                              << 2U)) 
+                                                          | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_3) 
+                                                              << 1U) 
+                                                             | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_1)))))))) 
+                                << 0x20U) | (QData)((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_169))) 
+                              >> 0x20U));
+    __Vtemp_13[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_35) 
+                       << 1U) | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_34));
+    bufp->fullWData(oldp+110,(__Vtemp_13),66);
+    __Vtemp_15[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_164);
+    __Vtemp_15[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_164 
+                              >> 0x20U));
+    __Vtemp_15[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_124) 
+                       << 1U) | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_125));
+    bufp->fullWData(oldp+113,(__Vtemp_15),66);
+    __Vtemp_17[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_170);
+    __Vtemp_17[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_170 
+                              >> 0x20U));
+    __Vtemp_17[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_1) 
+                       << 1U) | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_0));
+    bufp->fullWData(oldp+116,(__Vtemp_17),66);
+    __Vtemp_19[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_164);
+    __Vtemp_19[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_164 
+                              >> 0x20U));
+    __Vtemp_19[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout) 
+                       << 1U) | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_158));
+    bufp->fullWData(oldp+119,(__Vtemp_19),66);
+    __Vtemp_21[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_170);
+    __Vtemp_21[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_170 
+                              >> 0x20U));
+    __Vtemp_21[2U] = ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_1) 
+                        & (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_3)) 
+                       << 1U) | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_0) 
+                                 & vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[0U]));
+    bufp->fullWData(oldp+122,(__Vtemp_21),66);
+    bufp->fullBit(oldp+125,((0U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))));
+    bufp->fullBit(oldp+126,(vlSelfRef.testbench__DOT__t0__DOT__ovalid));
+    bufp->fullIData(oldp+127,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[1U]),32);
+    bufp->fullIData(oldp+128,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[0U]),32);
+    bufp->fullCData(oldp+129,(vlSelfRef.testbench__DOT__t0__DOT__current_state),2);
+    bufp->fullBit(oldp+130,(((~ (IData)(vlSelfRef.testbench__DOT__t0__DOT__ovalid)) 
+                             & (1U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state)))));
+    bufp->fullBit(oldp+131,((2U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))));
+    bufp->fullQData(oldp+132,((0x1ffffffffULL & (((QData)((IData)(
+                                                                  vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[2U])) 
+                                                  << 0x1fU) 
+                                                 | ((QData)((IData)(
+                                                                    vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[1U])) 
+                                                    >> 1U)))),33);
+    bufp->fullQData(oldp+134,((0x1ffffffffULL & (((QData)((IData)(
+                                                                  vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[1U])) 
+                                                  << 0x20U) 
+                                                 | (QData)((IData)(
+                                                                   vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[0U]))))),33);
+    bufp->fullWData(oldp+136,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P),66);
+    bufp->fullQData(oldp+139,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__B),34);
+    bufp->fullCData(oldp+141,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__counter),6);
+    bufp->fullBit(oldp+142,(vlSelfRef.testbench__DOT__clk));
+    bufp->fullCData(oldp+143,(((0U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))
+                                ? ((IData)(vlSelfRef.testbench__DOT__invalid)
+                                    ? 1U : 0U) : ((1U 
+                                                   == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))
+                                                   ? 
+                                                  ((IData)(vlSelfRef.testbench__DOT__flush)
+                                                    ? 2U
+                                                    : 
+                                                   ((IData)(vlSelfRef.testbench__DOT__t0__DOT__ovalid)
+                                                     ? 0U
+                                                     : 1U))
+                                                   : 0U))),2);
 }
