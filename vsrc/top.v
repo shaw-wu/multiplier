@@ -19,16 +19,16 @@ module top #(
 );
 
 wire ovalid;
-wire [XLEN:0] mula; 
-wire [XLEN:0] mulb; 
+wire [XLEN+1:0] mula; 
+wire [XLEN+1:0] mulb; 
 wire signed_a;
 wire signed_b;
 
 assign signed_a = mul_signed[1] ? multiplicand[XLEN-1] : 1'b0;
 assign signed_b = mul_signed[0] ? multiplier[XLEN-1]   : 1'b0;
 assign outvalid = ovalid;
-assign mula = {signed_a, multiplicand}; 
-assign mulb = {signed_b, multiplier  }; 
+assign mula = {{2{signed_a}}, multiplicand}; 
+assign mulb = {{2{signed_b}}, multiplier  }; 
 
 localparam IDLE  = 2'b00;
 localparam WAIT  = 2'b01;
@@ -75,17 +75,17 @@ wire en;
 wire arst;
 wire mul_ready;
 /*verilator lint_off UNUSED*/
-wire [XLEN:0] _result_hi;
-wire [XLEN:0] _result_lo;
+wire [XLEN+1:0] _result_hi;
+wire [XLEN+1:0] _result_lo;
 assign en = ( (current_state == WAIT) && !ovalid );
 assign arst = ( (current_state == FLUSH) );
 assign mul_ready = ( current_state == IDLE );
 assign inready = mul_ready;
-assign result_hi = {_result_hi[XLEN-2:0], _result_lo[XLEN]};
+assign result_hi = {_result_hi[XLEN-3:0], _result_lo[XLEN+1:XLEN]};
 assign result_lo = _result_lo[XLEN-1:0];
 
 mul #(
-	.DATA_BITS(XLEN+1)
+	.DATA_BITS(XLEN+2)
 )
 m0(
 	.clk				  (clk			 ),

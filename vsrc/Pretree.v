@@ -2,15 +2,15 @@
 module Pretree #(
 	parameter STAGE = 1
 )(
-	input [65:0] Gin,
-	input [65:0] Pin,
-	output [65:0] Gout,
-	output [65:0] Pout
+	input [67:0] Gin,
+	input [67:0] Pin,
+	output [67:0] Gout,
+	output [67:0] Pout
 );
 
 genvar i;
 generate
-	for(i = 0; i < 66; i = i + 1) begin : _bit
+	for(i = 0; i < 68; i = i + 1) begin : _bit
 		if(i < (1 << (STAGE - 1))) begin : low
 			assign Gout[i] = Gin[i];
 			assign Pout[i] = Pin[i];

@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 module mul #(
-	parameter DATA_BITS = 33
+	parameter DATA_BITS = 34
 )(
 	input									clk					,
 	input  								asyn_rst	  ,
@@ -29,7 +29,7 @@ assign dS  =   S << 1;
 assign ndS = ~dS +  1;
 
 reg [DDATA_BITS-1:0] P;
-reg [DATA_BITS+1 :0] B;
+reg [DATA_BITS   :0] B;
 reg	[COUNT_BITS-1:0] counter; 
 /*verilator lint_off PINCONNECTEMPTY*/
 //66bits ALU
@@ -50,13 +50,13 @@ CLA alu(
 always @(posedge clk or negedge asyn_rst) begin
 	if(asyn_rst) begin
 		P					<= { DDATA_BITS  {1'b0}}; 
-		B					<= {(DATA_BITS+2){1'b0}}; 
+		B					<= {(DATA_BITS+1){1'b0}}; 
 		counter 	<= { COUNT_BITS  {1'b0}};
 		outvalid  <= 0;
 	end else begin
 		if(syn_rst) begin
 			P					<= { DDATA_BITS  {1'b0}}; 
-			B					<= {(DATA_BITS+2){1'b0}}; 
+			B					<= {(DATA_BITS+1){1'b0}}; 
 			counter 	<= { COUNT_BITS  {1'b0}};
 			outvalid  <= 0;
 		end else begin
@@ -66,7 +66,7 @@ always @(posedge clk or negedge asyn_rst) begin
 				else										 counter <= counter + 2;
 				if(counter == 0) begin
 					P <= {DDATA_BITS{1'b0}};
-					B <= {multiplier, 2'b0};
+					B <= {multiplier, 1'b0};
 				end else begin
 					P <= sum >>> 2;
 					B <= B >> 2;

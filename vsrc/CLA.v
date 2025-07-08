@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 module CLA (
-	input  [65:0] a		,
-	input	 [65:0] b	 	,
+	input  [67:0] a		,
+	input	 [67:0] b	 	,
 	input				  cin	,
-	output [65:0] sum	,
+	output [67:0] sum	,
 	output			  cout
 );
 
-wire [65:0] g, p;
+wire [67:0] g, p;
 assign g = a & b;
 assign p = a ^ b;
 
-wire [66:0] c;
+wire [68:0] c;
 assign c[0] = cin;
 
-localparam STAGE_NUM = clog2(66); 
-wire [65:0] G [0:STAGE_NUM];
-wire [65:0] P [0:STAGE_NUM];
+localparam STAGE_NUM = clog2(68); 
+wire [67:0] G [0:STAGE_NUM];
+wire [67:0] P [0:STAGE_NUM];
 
 assign G[0] = g;
 assign P[0] = p;
@@ -31,13 +31,13 @@ Pretree #(7) p7(G[6], P[6], G[7], P[7]);
 
 genvar i;
 generate
-	for(i = 0; i < 66; i = i + 1) begin : carry
+	for(i = 0; i < 68; i = i + 1) begin : carry
 		assign c[i+1] = G[STAGE_NUM][i] | (P[STAGE_NUM][i] & cin);
 	end
 endgenerate
 
-assign sum = p ^ c[65:0];
-assign cout = c[66];
+assign sum = p ^ c[67:0];
+assign cout = c[68];
 
 function integer clog2;
 	input integer value;
