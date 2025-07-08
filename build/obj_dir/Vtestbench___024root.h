@@ -27,6 +27,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vtestbench___024root final : public Verilated
         CData/*1:0*/ testbench__DOT__t0__DOT__next_state;
         CData/*0:0*/ testbench__DOT__t0__DOT__en;
         CData/*5:0*/ testbench__DOT__t0__DOT__m0__DOT__counter;
+        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT____VdfgRegularize_ha0a33f63_0_5;
+        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT____VdfgRegularize_ha0a33f63_0_7;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_0;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_1;
@@ -79,10 +81,10 @@ class alignas(VL_CACHE_LINE_BYTES) Vtestbench___024root final : public Verilated
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_48;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_49;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_50;
-        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_51;
-        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_52;
     };
     struct {
+        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_51;
+        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_52;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_53;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_54;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_55;
@@ -145,10 +147,10 @@ class alignas(VL_CACHE_LINE_BYTES) Vtestbench___024root final : public Verilated
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_28;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_29;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_30;
-        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_31;
-        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_32;
     };
     struct {
+        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_31;
+        CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_32;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_33;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_34;
         CData/*0:0*/ testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_35;
@@ -211,10 +213,10 @@ class alignas(VL_CACHE_LINE_BYTES) Vtestbench___024root final : public Verilated
         CData/*0:0*/ __Vtrigprevexpr___TOP__testbench__DOT__rst__0;
         CData/*0:0*/ __VactContinue;
         SData/*15:0*/ __VdfgRegularize_hd87f99a1_0_162;
-        SData/*15:0*/ __VdfgRegularize_hd87f99a1_0_168;
-        IData/*31:0*/ testbench__DOT__multiplicand;
     };
     struct {
+        SData/*15:0*/ __VdfgRegularize_hd87f99a1_0_168;
+        IData/*31:0*/ testbench__DOT__multiplicand;
         IData/*31:0*/ testbench__DOT__multiplier;
         VlWide<3>/*65:0*/ testbench__DOT__t0__DOT__m0__DOT__P;
         VlWide<3>/*65:0*/ testbench__DOT__t0__DOT__m0__DOT__adds;
@@ -233,7 +235,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtestbench___024root final : public Verilated
         IData/*31:0*/ __VdfgRegularize_hd87f99a1_0_169;
         IData/*31:0*/ __VactIterCount;
         QData/*32:0*/ testbench__DOT__t0__DOT__mula;
-        QData/*33:0*/ testbench__DOT__t0__DOT__m0__DOT__B;
+        QData/*34:0*/ testbench__DOT__t0__DOT__m0__DOT__B;
         QData/*63:0*/ __VdfgRegularize_hd87f99a1_0_164;
         QData/*63:0*/ __VdfgRegularize_hd87f99a1_0_170;
         VlUnpacked<VlWide<3>/*65:0*/, 8> testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G;

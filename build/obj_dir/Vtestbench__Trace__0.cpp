@@ -27,16 +27,25 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
     VlWide<3>/*95:0*/ __Vtemp_5;
     VlWide<3>/*95:0*/ __Vtemp_6;
     VlWide<3>/*95:0*/ __Vtemp_7;
-    VlWide<3>/*95:0*/ __Vtemp_8;
     VlWide<3>/*95:0*/ __Vtemp_9;
     VlWide<3>/*95:0*/ __Vtemp_10;
     VlWide<3>/*95:0*/ __Vtemp_11;
-    VlWide<3>/*95:0*/ __Vtemp_12;
     VlWide<3>/*95:0*/ __Vtemp_13;
+    VlWide<3>/*95:0*/ __Vtemp_14;
     VlWide<3>/*95:0*/ __Vtemp_15;
+    VlWide<3>/*95:0*/ __Vtemp_16;
     VlWide<3>/*95:0*/ __Vtemp_17;
+    VlWide<3>/*95:0*/ __Vtemp_18;
     VlWide<3>/*95:0*/ __Vtemp_19;
+    VlWide<3>/*95:0*/ __Vtemp_20;
     VlWide<3>/*95:0*/ __Vtemp_21;
+    VlWide<3>/*95:0*/ __Vtemp_22;
+    VlWide<3>/*95:0*/ __Vtemp_23;
+    VlWide<3>/*95:0*/ __Vtemp_24;
+    VlWide<3>/*95:0*/ __Vtemp_26;
+    VlWide<3>/*95:0*/ __Vtemp_28;
+    VlWide<3>/*95:0*/ __Vtemp_30;
+    VlWide<3>/*95:0*/ __Vtemp_32;
     // Body
     if (VL_UNLIKELY(((vlSelfRef.__Vm_traceActivity[1U] 
                       | vlSelfRef.__Vm_traceActivity
@@ -85,49 +94,80 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
         __Vtemp_7[1U] = __Vtemp_6[1U];
         __Vtemp_7[2U] = (3U & __Vtemp_6[2U]);
         bufp->chgWData(oldp+15,(__Vtemp_7),66);
+        __Vtemp_9[0U] = 0U;
+        __Vtemp_9[1U] = ((IData)(vlSelfRef.testbench__DOT__t0__DOT__mula) 
+                         << 1U);
+        __Vtemp_9[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__mula) 
+                          >> 0x1fU) | ((IData)((vlSelfRef.testbench__DOT__t0__DOT__mula 
+                                                >> 0x20U)) 
+                                       << 1U));
+        VL_SHIFTL_WWI(66,66,32, __Vtemp_10, __Vtemp_9, 1U);
+        __Vtemp_11[0U] = __Vtemp_10[0U];
+        __Vtemp_11[1U] = __Vtemp_10[1U];
+        __Vtemp_11[2U] = (3U & __Vtemp_10[2U]);
+        bufp->chgWData(oldp+18,(__Vtemp_11),66);
+        __Vtemp_13[0U] = 1U;
+        __Vtemp_13[1U] = 0U;
+        __Vtemp_13[2U] = 0U;
+        __Vtemp_14[0U] = 0U;
+        __Vtemp_14[1U] = ((IData)(vlSelfRef.testbench__DOT__t0__DOT__mula) 
+                          << 1U);
+        __Vtemp_14[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__mula) 
+                           >> 0x1fU) | ((IData)((vlSelfRef.testbench__DOT__t0__DOT__mula 
+                                                 >> 0x20U)) 
+                                        << 1U));
+        VL_SHIFTL_WWI(66,66,32, __Vtemp_15, __Vtemp_14, 1U);
+        __Vtemp_16[0U] = (~ __Vtemp_15[0U]);
+        __Vtemp_16[1U] = (~ __Vtemp_15[1U]);
+        __Vtemp_16[2U] = (~ __Vtemp_15[2U]);
+        VL_ADD_W(3, __Vtemp_17, __Vtemp_13, __Vtemp_16);
+        __Vtemp_18[0U] = __Vtemp_17[0U];
+        __Vtemp_18[1U] = __Vtemp_17[1U];
+        __Vtemp_18[2U] = (3U & __Vtemp_17[2U]);
+        bufp->chgWData(oldp+21,(__Vtemp_18),66);
     }
     if (VL_UNLIKELY(((vlSelfRef.__Vm_traceActivity[3U] 
                       | vlSelfRef.__Vm_traceActivity
                       [6U])))) {
-        bufp->chgWData(oldp+18,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__adds),66);
-        __Vtemp_8[0U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[0U] 
-                         ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[0U]);
-        __Vtemp_8[1U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[1U] 
-                         ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[1U]);
-        __Vtemp_8[2U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[2U] 
-                         ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[2U]);
-        bufp->chgWData(oldp+21,(__Vtemp_8),66);
-        bufp->chgBit(oldp+24,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout));
-        bufp->chgWData(oldp+25,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__g),66);
-        bufp->chgWData(oldp+28,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p),66);
-        __Vtemp_9[0U] = vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[0U];
-        __Vtemp_9[1U] = vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[1U];
-        __Vtemp_9[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout) 
-                          << 2U) | vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[2U]);
-        bufp->chgWData(oldp+31,(__Vtemp_9),67);
-        bufp->chgWData(oldp+34,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[0]),66);
-        bufp->chgWData(oldp+37,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[1]),66);
-        bufp->chgWData(oldp+40,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[2]),66);
-        bufp->chgWData(oldp+43,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[3]),66);
-        bufp->chgWData(oldp+46,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[4]),66);
-        bufp->chgWData(oldp+49,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[5]),66);
-        bufp->chgWData(oldp+52,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[6]),66);
-        bufp->chgWData(oldp+55,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[7]),66);
-        bufp->chgWData(oldp+58,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[0]),66);
-        bufp->chgWData(oldp+61,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[1]),66);
-        bufp->chgWData(oldp+64,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[2]),66);
-        bufp->chgWData(oldp+67,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[3]),66);
-        bufp->chgWData(oldp+70,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[4]),66);
-        bufp->chgWData(oldp+73,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[5]),66);
-        bufp->chgWData(oldp+76,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[6]),66);
-        bufp->chgWData(oldp+79,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[7]),66);
-        bufp->chgWData(oldp+82,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p1____pinNumber3),66);
-        bufp->chgWData(oldp+85,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p1____pinNumber4),66);
-        bufp->chgWData(oldp+88,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p2____pinNumber3),66);
-        bufp->chgWData(oldp+91,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p2____pinNumber4),66);
-        bufp->chgWData(oldp+94,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p3____pinNumber3),66);
-        bufp->chgWData(oldp+97,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p3____pinNumber4),66);
-        __Vtemp_10[0U] = (IData)((((QData)((IData)(
+        bufp->chgWData(oldp+24,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__adds),66);
+        __Vtemp_19[0U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[0U] 
+                          ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[0U]);
+        __Vtemp_19[1U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[1U] 
+                          ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[1U]);
+        __Vtemp_19[2U] = (vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[2U] 
+                          ^ vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[2U]);
+        bufp->chgWData(oldp+27,(__Vtemp_19),66);
+        bufp->chgBit(oldp+30,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout));
+        bufp->chgWData(oldp+31,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__g),66);
+        bufp->chgWData(oldp+34,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p),66);
+        __Vtemp_20[0U] = vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[0U];
+        __Vtemp_20[1U] = vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[1U];
+        __Vtemp_20[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout) 
+                           << 2U) | vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____VdfgRegularize_h428b52b8_0_0[2U]);
+        bufp->chgWData(oldp+37,(__Vtemp_20),67);
+        bufp->chgWData(oldp+40,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[0]),66);
+        bufp->chgWData(oldp+43,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[1]),66);
+        bufp->chgWData(oldp+46,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[2]),66);
+        bufp->chgWData(oldp+49,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[3]),66);
+        bufp->chgWData(oldp+52,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[4]),66);
+        bufp->chgWData(oldp+55,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[5]),66);
+        bufp->chgWData(oldp+58,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[6]),66);
+        bufp->chgWData(oldp+61,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__G[7]),66);
+        bufp->chgWData(oldp+64,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[0]),66);
+        bufp->chgWData(oldp+67,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[1]),66);
+        bufp->chgWData(oldp+70,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[2]),66);
+        bufp->chgWData(oldp+73,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[3]),66);
+        bufp->chgWData(oldp+76,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[4]),66);
+        bufp->chgWData(oldp+79,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[5]),66);
+        bufp->chgWData(oldp+82,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[6]),66);
+        bufp->chgWData(oldp+85,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__P[7]),66);
+        bufp->chgWData(oldp+88,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p1____pinNumber3),66);
+        bufp->chgWData(oldp+91,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p1____pinNumber4),66);
+        bufp->chgWData(oldp+94,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p2____pinNumber3),66);
+        bufp->chgWData(oldp+97,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p2____pinNumber4),66);
+        bufp->chgWData(oldp+100,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p3____pinNumber3),66);
+        bufp->chgWData(oldp+103,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT____Vcellout__p3____pinNumber4),66);
+        __Vtemp_21[0U] = (IData)((((QData)((IData)(
                                                    (((((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_30) 
                                                          << 0x1fU) 
                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_31) 
@@ -225,7 +265,7 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
                                                                          | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_0) 
                                                                              << 0x10U) 
                                                                             | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_162))))))))));
-        __Vtemp_10[1U] = (IData)(((((QData)((IData)(
+        __Vtemp_21[1U] = (IData)(((((QData)((IData)(
                                                     (((((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_30) 
                                                           << 0x1fU) 
                                                          | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_31) 
@@ -324,10 +364,10 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
                                                                               << 0x10U) 
                                                                              | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_162))))))))) 
                                   >> 0x20U));
-        __Vtemp_10[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_28) 
+        __Vtemp_21[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_28) 
                            << 1U) | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_29));
-        bufp->chgWData(oldp+100,(__Vtemp_10),66);
-        __Vtemp_11[0U] = (IData)((((QData)((IData)(
+        bufp->chgWData(oldp+106,(__Vtemp_21),66);
+        __Vtemp_22[0U] = (IData)((((QData)((IData)(
                                                    (((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_81) 
                                                          << 0x1fU) 
                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_80) 
@@ -425,7 +465,7 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
                                                                          | (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_1) 
                                                                              << 0x10U) 
                                                                             | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_168))))))))));
-        __Vtemp_11[1U] = (IData)(((((QData)((IData)(
+        __Vtemp_22[1U] = (IData)(((((QData)((IData)(
                                                     (((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_81) 
                                                           << 0x1fU) 
                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_80) 
@@ -524,10 +564,10 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
                                                                               << 0x10U) 
                                                                              | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_168))))))))) 
                                   >> 0x20U));
-        __Vtemp_11[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_83) 
+        __Vtemp_22[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_83) 
                            << 1U) | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p5__DOT____VdfgRegularize_ha7d0d37d_0_82));
-        bufp->chgWData(oldp+103,(__Vtemp_11),66);
-        __Vtemp_12[0U] = (IData)((((QData)((IData)(
+        bufp->chgWData(oldp+109,(__Vtemp_22),66);
+        __Vtemp_23[0U] = (IData)((((QData)((IData)(
                                                    (((((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_62) 
                                                          << 0x1fU) 
                                                         | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_63) 
@@ -592,7 +632,7 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
                                                                  << 1U) 
                                                                 | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_0)))))))) 
                                    << 0x20U) | (QData)((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_163))));
-        __Vtemp_12[1U] = (IData)(((((QData)((IData)(
+        __Vtemp_23[1U] = (IData)(((((QData)((IData)(
                                                     (((((((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_62) 
                                                           << 0x1fU) 
                                                          | ((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_63) 
@@ -658,10 +698,10 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
                                                                  | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_0)))))))) 
                                     << 0x20U) | (QData)((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_163))) 
                                   >> 0x20U));
-        __Vtemp_12[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_60) 
+        __Vtemp_23[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_60) 
                            << 1U) | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_61));
-        bufp->chgWData(oldp+106,(__Vtemp_12),66);
-        __Vtemp_13[0U] = (IData)((((QData)((IData)(
+        bufp->chgWData(oldp+112,(__Vtemp_23),66);
+        __Vtemp_24[0U] = (IData)((((QData)((IData)(
                                                    (((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_33) 
                                                          << 0x1fU) 
                                                         | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_32) 
@@ -726,7 +766,7 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
                                                                  << 1U) 
                                                                 | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_1)))))))) 
                                    << 0x20U) | (QData)((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_169))));
-        __Vtemp_13[1U] = (IData)(((((QData)((IData)(
+        __Vtemp_24[1U] = (IData)(((((QData)((IData)(
                                                     (((((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_33) 
                                                           << 0x1fU) 
                                                          | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_32) 
@@ -792,62 +832,62 @@ void Vtestbench___024root__trace_chg_0_sub_0(Vtestbench___024root* vlSelf, Veril
                                                                  | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_1)))))))) 
                                     << 0x20U) | (QData)((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_169))) 
                                   >> 0x20U));
-        __Vtemp_13[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_35) 
+        __Vtemp_24[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_35) 
                            << 1U) | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p6__DOT____VdfgRegularize_h0d85168d_0_34));
-        bufp->chgWData(oldp+109,(__Vtemp_13),66);
-        __Vtemp_15[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_164);
-        __Vtemp_15[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_164 
+        bufp->chgWData(oldp+115,(__Vtemp_24),66);
+        __Vtemp_26[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_164);
+        __Vtemp_26[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_164 
                                   >> 0x20U));
-        __Vtemp_15[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_124) 
+        __Vtemp_26[2U] = (((IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_124) 
                            << 1U) | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_125));
-        bufp->chgWData(oldp+112,(__Vtemp_15),66);
-        __Vtemp_17[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_170);
-        __Vtemp_17[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_170 
+        bufp->chgWData(oldp+118,(__Vtemp_26),66);
+        __Vtemp_28[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_170);
+        __Vtemp_28[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_170 
                                   >> 0x20U));
-        __Vtemp_17[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_1) 
+        __Vtemp_28[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_1) 
                            << 1U) | (IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_0));
-        bufp->chgWData(oldp+115,(__Vtemp_17),66);
-        __Vtemp_19[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_164);
-        __Vtemp_19[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_164 
+        bufp->chgWData(oldp+121,(__Vtemp_28),66);
+        __Vtemp_30[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_164);
+        __Vtemp_30[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_164 
                                   >> 0x20U));
-        __Vtemp_19[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout) 
+        __Vtemp_30[2U] = (((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__cout) 
                            << 1U) | (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_158));
-        bufp->chgWData(oldp+118,(__Vtemp_19),66);
-        __Vtemp_21[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_170);
-        __Vtemp_21[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_170 
+        bufp->chgWData(oldp+124,(__Vtemp_30),66);
+        __Vtemp_32[0U] = (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_170);
+        __Vtemp_32[1U] = (IData)((vlSelfRef.__VdfgRegularize_hd87f99a1_0_170 
                                   >> 0x20U));
-        __Vtemp_21[2U] = ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_1) 
+        __Vtemp_32[2U] = ((((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_1) 
                             & (IData)(vlSelfRef.__VdfgRegularize_hd87f99a1_0_3)) 
                            << 1U) | ((IData)(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p7__DOT____VdfgRegularize_h1eb937ed_0_0) 
                                      & vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__alu__DOT__p[0U]));
-        bufp->chgWData(oldp+121,(__Vtemp_21),66);
+        bufp->chgWData(oldp+127,(__Vtemp_32),66);
     }
     if (VL_UNLIKELY((vlSelfRef.__Vm_traceActivity[4U]))) {
-        bufp->chgBit(oldp+124,((0U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))));
-        bufp->chgBit(oldp+125,(vlSelfRef.testbench__DOT__t0__DOT__ovalid));
-        bufp->chgIData(oldp+126,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[1U]),32);
-        bufp->chgIData(oldp+127,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[0U]),32);
-        bufp->chgCData(oldp+128,(vlSelfRef.testbench__DOT__t0__DOT__current_state),2);
-        bufp->chgBit(oldp+129,(((~ (IData)(vlSelfRef.testbench__DOT__t0__DOT__ovalid)) 
+        bufp->chgBit(oldp+130,((0U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))));
+        bufp->chgBit(oldp+131,(vlSelfRef.testbench__DOT__t0__DOT__ovalid));
+        bufp->chgIData(oldp+132,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[1U]),32);
+        bufp->chgIData(oldp+133,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[0U]),32);
+        bufp->chgCData(oldp+134,(vlSelfRef.testbench__DOT__t0__DOT__current_state),2);
+        bufp->chgBit(oldp+135,(((~ (IData)(vlSelfRef.testbench__DOT__t0__DOT__ovalid)) 
                                 & (1U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state)))));
-        bufp->chgBit(oldp+130,((2U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))));
-        bufp->chgQData(oldp+131,((0x1ffffffffULL & 
+        bufp->chgBit(oldp+136,((2U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))));
+        bufp->chgQData(oldp+137,((0x1ffffffffULL & 
                                   (((QData)((IData)(
                                                     vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[2U])) 
                                     << 0x1fU) | ((QData)((IData)(
                                                                  vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[1U])) 
                                                  >> 1U)))),33);
-        bufp->chgQData(oldp+133,((0x1ffffffffULL & 
+        bufp->chgQData(oldp+139,((0x1ffffffffULL & 
                                   (((QData)((IData)(
                                                     vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[1U])) 
                                     << 0x20U) | (QData)((IData)(
                                                                 vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P[0U]))))),33);
-        bufp->chgWData(oldp+135,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P),66);
-        bufp->chgQData(oldp+138,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__B),34);
-        bufp->chgCData(oldp+140,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__counter),6);
+        bufp->chgWData(oldp+141,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__P),66);
+        bufp->chgQData(oldp+144,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__B),35);
+        bufp->chgCData(oldp+146,(vlSelfRef.testbench__DOT__t0__DOT__m0__DOT__counter),6);
     }
-    bufp->chgBit(oldp+141,(vlSelfRef.testbench__DOT__clk));
-    bufp->chgCData(oldp+142,(((0U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))
+    bufp->chgBit(oldp+147,(vlSelfRef.testbench__DOT__clk));
+    bufp->chgCData(oldp+148,(((0U == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))
                                ? ((IData)(vlSelfRef.testbench__DOT__invalid)
                                    ? 1U : 0U) : ((1U 
                                                   == (IData)(vlSelfRef.testbench__DOT__t0__DOT__current_state))
